@@ -1,3 +1,6 @@
+# Note: This is not my own Design
+- [Jonas Schmedtmann](https://www.jonas.io)
+
 # Possible fixes for common problems with NPM packages
 
 ## Q1: My Sass isn't compiling at all or the `-w` flag is not working
