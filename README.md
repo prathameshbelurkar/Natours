@@ -1,57 +1,49 @@
-# Note: This is not my own Design
-- [Jonas Schmedtmann](https://www.jonas.io)
+## Natours 🏔️🚠🗻
 
-# Possible fixes for common problems with NPM packages
+<br>
 
-## Q1: My Sass isn't compiling at all or the `-w` flag is not working
+<p align="center">
+  <img src="https://images.unsplash.com/photo-1589405858862-2ac9cbb41321?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" width=450 >
+</p>
 
-### Solution 1
+<br>
 
-This may be because you're using a different `node-sass` version than the one I use in the videos. Please uninstall `node-sass` with:
+Fictional Static Web App which enables user to explore nature with tourist around web.
 
-`npm uninstall node-sass --save-dev`
+_Let's Explore_
 
-Then install version `4.5.3` with;
+**Deployment:** https://prathameshbelurkar.github.io/Trillo/
 
-`npm install node-sass@4.5.3 --save-dev`.
+<br>
 
-### Solution 2
+<hr>
 
-This is more of a workaround if Solution 1 doesn't work. You can install a package called `nodemon` to run node.js code directly. Install it with:
+### SaSS/SCSS
 
-`npm install nodemon --save-dev`
+<br>
 
-Then in the `package.json` file, add the following tasks:
+<p align="center">
+  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbz78mrQU19JgWdjiSppHUworparJ7kNdZPQ&usqp=CAU" width=400 >
+</p>
 
-```
-"compile:sass": "node-sass sass/main.scss css/style.comp.css"
-"watch:sass": "nodemon -e scss -x \"npm run compile:sass\""
-```
+<br>
 
-### Solution 3
+_Sass (short for syntactically awesome style sheets) is a preprocessor scripting language that is interpreted or compiled into Cascading Style Sheets (CSS). SassScript is the scripting language itself._
 
-If you're using VSCode, the defualt autosave setting is that it saves your file each time you stroke a key. This made me run into some errors in the videos. The fix is to change the autosave setting to `onFocusChange`. You can do so by copying the following instruction to the settings (panel on the right side):
+_Sass consists of two syntaxes. The original syntax, called "the indented syntax," uses a syntax similar to Haml. It uses indentation to separate code blocks and newline characters to separate rules. The newer syntax, SCSS (Sassy CSS), uses block formatting like that of CSS. It uses braces to denote code blocks and semicolons to separate rules within a block. The indented syntax and SCSS files are traditionally given the extensions .sass and .scss, respectively._
 
-`"files.autoSave": "onFocusChange"`
+- Sass stands for Syntactically Awesome Stylesheet
+- Sass is an extension to CSS
+- Sass is a CSS pre-processor
+- Sass is completely compatible with all versions of CSS
+- Sass reduces repetition of CSS and therefore saves time
+- Sass was designed by Hampton Catlin and developed by Natalie Weizenbaum in 2006
+- Sass is free to download and use
 
-## Q2: Autoprefixer isn't working on Windows
+<br>
 
-On Windows you will have to escape the `"` in the autoprefixer task, just like this:
+<hr>
 
-`"prefix:css": "postcss --use autoprefixer -b \"last 10 versions\" css/style.concat.css -o css/style.prefix.css"`
+**Designed by Jonas Schmedtmann as always highly appreciated!**
 
-## Q3: General problems
-
-If your NPM packages don't work at all, please make sure you have at least node `v6.x.x` installed on your computer. You can check your version with `node -v`.
-
-You can also try setting all your NPM packages to the same versions used in the videos. It works like described in **Q1** of this document (`node-sass` example). These are the versions I used in the videos:
-
-```
-"autoprefixer": "^7.1.4",
-"concat": "^1.0.3",
-"node-sass": "^4.5.3",
-"npm-run-all": "^4.1.1",
-"postcss-cli": "^4.1.1"
-```
-
-**I will keep this document updated if more issues arise.**
+GitHub: https://github.com/jonasschmedtmann
