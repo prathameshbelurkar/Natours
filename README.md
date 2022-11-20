@@ -3,7 +3,7 @@
 <br>
 
 <p align="center">
-  <img src="https://images.unsplash.com/photo-1589405858862-2ac9cbb41321?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" width=450 >
+  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Everest_North_Face_toward_Base_Camp_Tibet_Luca_Galuzzi_2006.jpg/495px-Everest_North_Face_toward_Base_Camp_Tibet_Luca_Galuzzi_2006.jpg" width=450 >
 </p>
 
 <br>
@@ -12,7 +12,7 @@ Fictional Static Web App which enables user to explore nature with tourist aroun
 
 _Let's Explore_
 
-**Deployment:** https://prathameshbelurkar.github.io/Trillo/
+**Deployment:** https://prathameshbelurkar.github.io/Natours/
 
 <br>
 
